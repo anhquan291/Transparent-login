@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family-Roboto');
+
+body {
+	font-family: 'Roboto',sans-serif;
+	background: url('../img/bg.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.main-section{
+	margin: 0 auto;
+	margin-top: 130px;
+	padding: 0;
+}
+
+.modal-content{
+	background-color: #3b4652;
+	opacity: .90; /* làm transparent màu nền */
+	padding: 0 18px;
+	box-shadow: 0px 0px 3px #848484;
+	border-radius: 10px;
+
+}
+.user-img{
+	margin-top: -50px;	/* cho hình tiến lên */
+	margin-bottom: 25px; /* tăng khoảng cách cho hình với element kế dưới */
+}
+.user-img img{
+	width: 100px;
+	height: 130px;
+	/* border-radius:5px; */ /* làm cho viền tròn  */
+	
+}
+
+.form-group{
+	margin-bottom: 25px;
+}
+.form-group input{
+	height: 42px;
+	border-radius: 5px;
+	border: 0;
+	font-size:18px;
+	padding-left: 54px;
+}
+
+.form-group::before{  /* Chèn icon từ trang font awesome vào form group */
+	font-family:'Font Awesome\ 5 Free';
+	content:"\f007";
+	position: absolute; /* cố định trước khi di chuyển sang trái */
+	font-size: 22px;
+	color:#555e60;
+	left: 28px; 
+	padding-top:4px;
+}
+.form-group:last-of-type::before{ /* thay hình người ở password thành hình lock */
+	content:"\f023";
+}
+button{
+	width:40%;
+	margin:5px 0 25px;
+}
+.btn{
+	background-color: #27c2a5;
+	color:#fff;
+	font-size: 15px;
+	padding:7px 14px;
+	border-radius: 5px;
+}
+.btn:hover,.btn:focus{
+	background-color: #25a890;
+
+}
+
+.svg-inline--fa{ /* class của biểu tượng login */
+	font-size: 15px;
+	margin-right: 7px;
+
+
+}
+.forgot{
+	padding: 5px 0 25px; /* 5 top 0 right left 25 bottom */
+}
+.forgot a{
+	color:#c2fbfe;
+}
